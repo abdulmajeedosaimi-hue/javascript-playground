@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      "
+    >
+      <iframe
+        width="800"
+        height="800"
+        frameborder="0"
+        src="https://pythontutor.com/iframe-embed.html#code=%0A//%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0A//%20Task%204%3A%20Order%20Processing%0A//%20%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0Aconsole.log%28%22%5Cn---%20Task%204%3A%20Order%20Processing%20---%22%29%3B%0A%0Aconst%20customerName%20%3D%20%22Alex%22%3B%0Aconst%20orderAmount%20%3D%20150%3B%0Aconst%20paymentMethod%20%3D%20%22card%22%3B%0Aconst%20isMember%20%3D%20true%3B%0Aconst%20couponCode%20%3D%20%22SALE15%22%3B%0A%0A//%201.%20Check%20whether%20the%20payment%20method%20is%20%22card%22%20OR%20%22cash%22%0Aconst%20isValidPayment%20%3D%20paymentMethod%20%3D%3D%3D%20%22card%22%20%7C%7C%20paymentMethod%20%3D%3D%3D%20%22cash%22%3B%0A%0A//%202.%20Check%20whether%20the%20coupon%20code%20includes%20%22SALE%22%0Aconst%20hasSaleCoupon%20%3D%20couponCode.includes%28%22SALE%22%29%3B%0A%0A//%203.%20Use%20if...else%20to%20determine%20whether%20the%20coupon%20is%20valid%0Aif%20%28hasSaleCoupon%29%20%7B%0A%20%20console.log%28%60Coupon%20%22%24%7BcouponCode%7D%22%20is%20valid!%60%29%3B%0A%7D%20else%20%7B%0A%20%20console.log%28%22Invalid%20coupon%20code.%22%29%3B%0A%7D%0A%0A//%204.%20Use%20if...else%20if...else%20to%20determine%20the%20order%20category%0Alet%20orderCategory%20%3D%20%22%22%3B%0Aif%20%28orderAmount%20%3E%3D%20200%29%20%7B%0A%20%20orderCategory%20%3D%20%22Premium%20order!%22%3B%0A%7D%20else%20if%20%28orderAmount%20%3E%3D%20100%29%20%7B%0A%20%20orderCategory%20%3D%20%22Standard%20order!%22%3B%0A%7D%20else%20if%20%28orderAmount%20%3E%200%29%20%7B%0A%20%20orderCategory%20%3D%20%22Small%20order!%22%3B%0A%7D%20else%20%7B%0A%20%20orderCategory%20%3D%20%22Invalid%20order%20amount!%22%3B%0A%7D%0Aconsole.log%28orderCategory%29%3B%0A%0A//%205.%20Check%20member%20discount%20eligibility%0Aif%20%28isMember%20%26%26%20orderAmount%20%3E%3D%20100%29%20%7B%0A%20%20console.log%28%22You%20received%20a%20member%20discount!%22%29%3B%0A%7D%0A%0A//%206.%20Use%20the%20!%20operator%20to%20check%20whether%20the%20customer%20is%20NOT%20a%20member%0Aif%20%28!isMember%29%20%7B%0A%20%20console.log%28%22Sign%20up%20for%20membership%20to%20earn%20discounts%20on%20future%20orders!%22%29%3B%0A%7D%0A%0A//%207%20%26%208.%20Validate%20order%20processing%20and%20display%20final%20order%20message%0Aif%20%28!isValidPayment%20%7C%7C%20!%28orderAmount%20%3E%200%29%29%20%7B%0A%20%20console.log%28%22Order%20cannot%20be%20processed!%22%29%3B%0A%7D%20else%20%7B%0A%20%20//%20Using%20Math.max%28%29%20as%20an%20extra%20safeguard%20to%20ensure%20displayed%20amount%20is%20never%20negative%0A%20%20const%20confirmedAmount%20%3D%20Math.max%280,%20orderAmount%29%3B%0A%20%20console.log%28%0A%20%20%20%20%60Order%20confirmed%20for%20%24%7BcustomerName%7D!%20Category%3A%20%24%7BorderCategory%7D%20Total%20paid%20via%20%24%7BpaymentMethod%7D%3A%20%24%24%7BconfirmedAmount.toFixed%282%29%7D.%60%0A%20%20%29%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&curInstr=6&matrixMode=true&origin=opt-frontend.js&py=js"
+      >
+      </iframe>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
