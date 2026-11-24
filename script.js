@@ -4,7 +4,7 @@ function processOrder(orderPrice, balance) {
   }
 
   if (balance < orderPrice) {
-    return "Not enough money";
+    return "Not enough mones";
   }
 
   if (orderPrice >= 500) {
