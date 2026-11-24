@@ -1,0 +1,11 @@
+.me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+/* button {
+  display: block;
+  margin: 300px auto;
+} */
